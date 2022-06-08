@@ -72,7 +72,7 @@ public class OrderCreateHelper {
         }
     }
 
-    private void saveOrder(Order order) {
+    private Order saveOrder(Order order) {
         Order orderResult = orderRepository.save(order);
         if (order == null) {
             log.error("Could not save order!");
@@ -80,5 +80,6 @@ public class OrderCreateHelper {
         }
 
         log.info("Order is saved with id: {}", orderResult.getId().getValue());
+        return orderResult;
     }
 }

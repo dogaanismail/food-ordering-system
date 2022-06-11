@@ -8,17 +8,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-application" />
-        <module name="order-messaging" />
         <module name="kafka-model" />
+        <module name="customer-service" />
         <module name="order-application-service" />
         <module name="kafka-consumer" />
-        <module name="common-domain" />
         <module name="kafka-producer" />
-        <module name="order-application" />
+        <module name="payment-messaging" />
         <module name="kafka-config-data" />
         <module name="order-data-access" />
-        <module name="order-domain-core" />
+        <module name="payment-data-access" />
         <module name="order-container" />
+        <module name="order-messaging" />
+        <module name="payment-application-service" />
+        <module name="payment-container" />
+        <module name="common-domain" />
+        <module name="order-application" />
+        <module name="order-domain-core" />
+        <module name="payment-domain-core" />
       </profile>
     </annotationProcessing>
   </component>
@@ -27,6 +33,8 @@
       <module name="common" options="" />
       <module name="common-application" options="-parameters" />
       <module name="common-domain" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
+      <module name="food-ordering-system" options="" />
       <module name="kafka-config-data" options="-parameters" />
       <module name="kafka-consumer" options="-parameters" />
       <module name="kafka-model" options="-parameters" />
@@ -39,6 +47,13 @@
       <module name="order-domain-core" options="-parameters" />
       <module name="order-messaging" options="-parameters" />
       <module name="order-service" options="" />
+      <module name="payment-application-service" options="-parameters" />
+      <module name="payment-container" options="-parameters" />
+      <module name="payment-data-access" options="-parameters" />
+      <module name="payment-domain" options="" />
+      <module name="payment-domain-core" options="-parameters" />
+      <module name="payment-messaging" options="-parameters" />
+      <module name="payment-service" options="" />
     </option>
   </component>
 </project>

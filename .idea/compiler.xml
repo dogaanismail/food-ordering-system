@@ -10,6 +10,7 @@
         <module name="common-application" />
         <module name="kafka-model" />
         <module name="customer-service" />
+        <module name="restaurant-data-access" />
         <module name="order-application-service" />
         <module name="kafka-consumer" />
         <module name="kafka-producer" />
@@ -17,14 +18,19 @@
         <module name="kafka-config-data" />
         <module name="order-data-access" />
         <module name="payment-data-access" />
+        <module name="restaurant-domain" />
         <module name="order-container" />
+        <module name="restaurant-container" />
         <module name="order-messaging" />
         <module name="payment-application-service" />
         <module name="payment-container" />
         <module name="common-domain" />
         <module name="order-application" />
+        <module name="restaurant-domain-core" />
         <module name="order-domain-core" />
         <module name="payment-domain-core" />
+        <module name="restaurant-application-service" />
+        <module name="restaurant-messaging" />
       </profile>
     </annotationProcessing>
   </component>
@@ -43,7 +49,7 @@
       <module name="order-application-service" options="-parameters" />
       <module name="order-container" options="-parameters" />
       <module name="order-data-access" options="-parameters" />
-      <module name="order-domain" options="-parameters" />
+      <module name="order-domain" options="" />
       <module name="order-domain-core" options="-parameters" />
       <module name="order-messaging" options="-parameters" />
       <module name="order-service" options="" />
@@ -54,6 +60,13 @@
       <module name="payment-domain-core" options="-parameters" />
       <module name="payment-messaging" options="-parameters" />
       <module name="payment-service" options="" />
+      <module name="restaurant-application-service" options="-parameters" />
+      <module name="restaurant-container" options="-parameters" />
+      <module name="restaurant-data-access" options="-parameters" />
+      <module name="restaurant-domain" options="-parameters" />
+      <module name="restaurant-domain-core" options="-parameters" />
+      <module name="restaurant-messaging" options="-parameters" />
+      <module name="restaurant-service" options="" />
     </option>
   </component>
 </project>

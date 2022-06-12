@@ -80,6 +80,12 @@
 
             <dependency>
                 <groupId>org.food.ordering.system</groupId>
+                <artifactId>common-data-access</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.food.ordering.system</groupId>
                 <artifactId>payment-domain-core</artifactId>
                 <version>${project.version}</version>
             </dependency>

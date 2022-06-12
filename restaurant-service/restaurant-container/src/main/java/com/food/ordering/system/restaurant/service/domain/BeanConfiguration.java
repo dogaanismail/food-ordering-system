@@ -1,4 +1,4 @@
-package com.food.ordering.system.order.service.domain;
+package com.food.ordering.system.restaurant.service.domain;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BeanConfiguration {
     @Bean
-    public OrderDomainService orderDomainService(){
-        return new OrderDomainServiceImpl();
+    public RestaurantDomainService restaurantDomainService() {
+        return new RestaurantDomainServiceImpl();
     }
 }

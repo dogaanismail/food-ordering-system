@@ -68,7 +68,7 @@
       <module name="restaurant-domain" options="-parameters" />
       <module name="restaurant-domain-core" options="-parameters" />
       <module name="restaurant-messaging" options="-parameters" />
-      <module name="restaurant-service" options="-parameters" />
+      <module name="restaurant-service" options="" />
     </option>
   </component>
 </project>

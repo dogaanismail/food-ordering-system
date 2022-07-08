@@ -34,7 +34,6 @@
             <groupId>org.food.ordering.system</groupId>
             <artifactId>common-application</artifactId>
         </dependency>
-        
     </dependencies>
 
 </project>

@@ -10,8 +10,7 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 @Component
 public class KafkaMessageHelper {
 
-    public <T> ListenableFutureCallback<SendResult<String, T>>
-    getKafkaCallback(String responseTopicName, T avroModel, String orderId, String avroModelName) {
+    public <T> ListenableFutureCallback<SendResult<String, T>> getKafkaCallback(String responseTopicName, T avroModel, String orderId, String avroModelName) {
         return new ListenableFutureCallback<SendResult<String, T>>() {
             @Override
             public void onFailure(Throwable ex) {

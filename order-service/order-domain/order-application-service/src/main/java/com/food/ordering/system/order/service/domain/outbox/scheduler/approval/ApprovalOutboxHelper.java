@@ -90,7 +90,7 @@ public class ApprovalOutboxHelper {
             log.error("Could not create OrderApprovalEventPayload for order id: " +
                     orderApprovalEventPayload.getOrderId(), exception);
             throw new OrderDomainException("Could not create OrderApprovalEventPayload for order id: " +
-                    orderApprovalEventPayload.getOrderId(), exception)
+                    orderApprovalEventPayload.getOrderId(), exception);
         }
     }
 }

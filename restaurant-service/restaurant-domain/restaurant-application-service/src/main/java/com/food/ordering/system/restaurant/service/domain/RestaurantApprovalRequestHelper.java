@@ -50,9 +50,7 @@ public class RestaurantApprovalRequestHelper {
         Restaurant restaurant = findRestaurant(restaurantApprovalRequest);
         OrderApprovalEvent orderApprovalEvent =
                 restaurantDomainService.validateOrder(restaurant,
-                        failureMessages,
-                        orderApprovedMessagePublisher,
-                        orderRejectedMessagePublisher);
+                        failureMessages);
         orderApprovalRepository.save(restaurant.getOrderApproval());
         return orderApprovalEvent;
     }
